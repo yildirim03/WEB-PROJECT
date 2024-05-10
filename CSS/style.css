@@ -1,0 +1,29 @@
+/* .carousel-item img {
+    border-bottom: 3px;
+}
+.carousel{
+    height: 100vh;
+    object-fit: cover;
+    
+    .carousel-inner img{
+        height: 100vh;
+        width: 100vw;
+        object-fit: cover;
+
+    }
+} */
+.carouselExampleDark {
+    max-width: 750px; /* Maksimum genişlik */
+    max-height: 500px; /* Maksimum yükseklik */
+    margin: auto; /* Dikey ve yatayda ortalamak için */
+    overflow: hidden; /* İçerik taşmasını önlemek için */
+}
+
+.carouselExampleDark .carousel-item img {
+    max-width: 100%; /* Resimlerin maksimum genişliği */
+    max-height: 100%; /* Resimlerin maksimum yüksekliği */
+    width: auto; /* Genişlik otomatik olarak ayarlanacak */
+    height: auto; /* Yükseklik otomatik olarak ayarlanacak */
+}
+
+
