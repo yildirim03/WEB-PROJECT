@@ -4,15 +4,20 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My&City</title>
+    <title>Me&City</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/yazıStyle.css">
+    <link rel="stylesheet" href="CSS/index.css">
+
+
 
 </head>
 
-<body>
+<body
+    style="background-image: url(Pictures/arkaPlanTema/sayfa-1.jpg); background-size: cover; background-attachment: fixed; background-position: center; overflow-x: hidden; overflow-y: hidden;">
     <!-- menü başlangıç kısımı-->
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top shadow-lg">
@@ -37,13 +42,16 @@
                         <a class="nav-link" href="memleketim.html">Memleketim</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Mirasımız</a>
+                        <a class="nav-link" href="#">Takımımız</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">İlgi alanlarım</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">İletişim Sayfası</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-weight: bold; color: rgb(95, 170, 8);" href="#">Giriş yap</a>
                     </li>
 
                 </ul>
@@ -53,7 +61,37 @@
 
     <!-- menü sonu kısımı-->
 
-    <h1>Merhaba index1</h1>
+    <!--giriş mesajı PROJE KAPAK-->
+    <div class="overlay">
+        <section id="headerSection">
+            <div class="container">
+                <div class="row text-center">
+
+                </div>
+                <div>
+        </section>
+        <header id="headerSection">
+            <div class="container">
+                <div class="row text-center ">
+                    <div class="col my-auto">
+                        <h1 class="display-3 text-white"><span class="nobr">WebTeknoloji &shy;Proje/Tasarım</span> </h1>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col my-5">
+                        <h3 class="display-5 text-white">Web Teknolojileri Bahar Dönemi Proje Ödevi
+                            <br>Batuhan Yıldırım<br>B221210049<br>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!--giriş mesajı PROJE KAPAK sonu-->
+
+
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -65,6 +103,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <script src="onClick.js"></script>
+
 </body>
 
 </html>
