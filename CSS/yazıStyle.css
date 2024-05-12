@@ -1,7 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Quando&display=swap');
 
 /*font-family: "Briem Hand", cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/*    font-family: "Work Sans", sans-serif;
+ */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/*
+  font-family: "Montserrat", sans-serif;
 
+*/
+
+/* ?tüm navbar yazı stili ailesi burdan değişir */
 .navbar {
     font-family: "Briem Hand", cursive;
+}
+
+/* burası özgemiş/cv sayfasının sağ kısmındaki yetenekler divi*/
+.yetenekler .box {
+    font-family: "Montserrat", sans-serif;
+
 }

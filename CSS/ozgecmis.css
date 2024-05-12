@@ -1,0 +1,297 @@
+.overlay {
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+#headerSection .row {
+
+    height: 20vh;
+    text-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+
+.navbar {
+    border-bottom: 3px #f81404 solid;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    /*
+   ? justify-content: center;: İçerik öğelerini yatay yönde (sol ve sağ) merkezlemek için kullanılır.
+   ! align-items: center;: İçerik öğelerini dikey yönde (yukarı ve aşağı) merkezlemek için kullanılır.
+   * min-height: 100vh;: Elementin minimum yüksekliğini belirler. 'vh' (viewport height) birimi, ekran yüksekliğinin yüzde cinsinden belirler. 
+    Bu durumda, ekranın tamamını kaplayacak şekilde 100 viewport yüksekliği tanımlar.
+    */
+    background-color: rgb(71, 75, 75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+
+}
+
+.container {
+    /*
+    ! display: grid;: Elementin bir grid container olduğunu belirtir, yani içindeki elemanları bir grid layout içine yerleştirmeye izin verir.
+    */
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 1200px;
+    background: #ffffff;
+    margin-top: 75px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+    font-family: "Work Sans", sans-serif;
+
+
+
+
+}
+
+.container .sol_kisim {
+    position: relative;
+    background: #003147;
+    padding: 40px;
+    font-family: "Work Sans", sans-serif;
+
+
+}
+
+/*
+?position: relative;: Elementin konumlandırma türünü belirler. relative değeri, elementin normal akış içinde kalmasını sağlar ve konumlandırma özelliklerini kullanırken, elementin kendi normal pozisyonunu baz alır.
+ ! background: #003147;: Arkaplan rengini belirler. #003147 kodu bir mavi tonudur.
+* padding: 40px;: Elementin iç içeriğine dış kenardan ekstra boşluk ekler. 40 piksel sol, sağ, üst ve alt kenarlarda boşluk oluşturur.
+*/
+
+.profilText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+.profilText .imgBx {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.profilText .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+/*
+ozgecmis sınıfındaki sol kısımın texti
+*/
+.profilText h2 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+
+}
+
+.contactInfo {
+    padding-top: 40px;
+
+}
+
+.title {
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+
+}
+
+.contactInfo ul {
+    position: relative;
+}
+
+.contactInfo ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+    margin-left: -30px;
+
+}
+
+.contactInfo ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.contactInfo ul li .text {
+    color: #fff;
+    font-weight: 500;
+}
+
+.contactInfo.edu {
+    color: #fff;
+
+}
+
+.contactInfo.edu h5 {
+    color: rgb(0, 140, 255);
+}
+
+.contactInfo.langue .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #494846;
+    display: block;
+    margin-top: 5px;
+}
+
+.contactInfo.langue .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #f87a04;
+}
+
+.container .sag_kisim {
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+.title2 {
+    text-align: center;
+}
+
+.underline {
+    border: none;
+    border-top: 2px solid black;
+    /* Çizginin rengini ve kalınlığını ayarlar */
+    width: 50%;
+    /* Çizginin genişliğini belirler */
+    margin: 20px auto;
+    /* Sayfanın ortasına hizalar */
+}
+
+.underline1 {
+    border: none;
+    border-top: 2px solid black;
+    /* Çizginin rengini ve kalınlığını ayarlar */
+    width: 200px;
+    /* Çizginin genişliğini belirler */
+    margin-left: 10px;
+    /* Çizginin soldan boşluğunu belirler */
+}
+
+
+
+
+.about .abilutius {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: left;
+    align-items: center;
+}
+
+.about .abilutius h4 {
+    text-align: left;
+    text-transform: uppercase;
+    color: #1f0047;
+    font-weight: 400;
+
+}
+
+.about .abilutius .percent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: bisque;
+
+}
+
+.about .abilutius .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #04f839;
+}
+
+.yetenekler .box {
+    position: relative;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: left;
+    align-items: center;
+}
+
+.yetenekler .box .percent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: bisque;
+}
+
+.yetenekler .box .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #f8a304;
+}
+
+
+/* Genel stiller buraya gelecek */
+
+@media only screen and (max-width: 768px) {
+    /* Ekran boyutu 768 pikselden küçük olduğunda bu stiller uygulanır */
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sol_kisim,
+    .sag_kisim {
+        width: 100%;
+        margin-top: 20px; /* Sağ kısmı sol kısımın altında bir boşluk bırakmak için */
+    }
+
+    .yetenekler,
+    .ilgiAlanı {
+        margin-top: 40px; /* Mobilde diğer içeriklerden daha fazla boşluk bırakmak için */
+    }
+
+    /* Diğer stiller buraya gelecek */
+}
+
