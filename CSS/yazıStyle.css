@@ -12,11 +12,12 @@
 
 /* ?tüm navbar yazı stili ailesi burdan değişir */
 .navbar {
-    font-family: "Briem Hand", cursive;
+  font-family: "Briem Hand", cursive;
 }
 
 /* burası özgemiş/cv sayfasının sağ kısmındaki yetenekler divi*/
 .yetenekler .box {
-    font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
 
 }
+

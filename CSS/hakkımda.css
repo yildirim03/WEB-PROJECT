@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    height: auto;
+    /* Container boyutu */
+
+}
+
+.section {
+    width: 65%;
+    background-color: rgb(49, 144, 161);
+    padding: 20px;
+    height: auto;
+}
+
+.aside {
+    width: 30%;
+    background-color: rgb(49, 144, 161);
+    padding: 20px;
+}
+
+.carousel-inner img {
+    max-width: 100%;
+    height: auto;
+    max-height: calc(100vh - 170px);
+    /* Sayfanın yüksekliğini ve üst ve alt alanların yüksekliğini çıkarır */
+    display: block;
+    margin: auto;
+    /* Resmi merkezler */
+}
+
+.footer {
+    background-color: #7c5c5c9c;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section,
+    .aside {
+        width: 100%;
+    }
+}
