@@ -1,3 +1,30 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Kullanıcı adı ve şifreyi al
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    // Kullanıcı adının bir e-posta adresi olup olmadığını kontrol et
+    if (!filter_var($username, FILTER_VALIDATE_EMAIL)) {
+        echo "Kullanıcı adı geçerli bir e-posta adresi değil!";
+        exit;
+    }
+
+    // Kullanıcı adından "@" işaretini kaldırarak sadece numarayı al
+    $user_number = substr($username, 0, strpos($username, '@'));
+    $userId=explode('@', $username);
+
+    // Şifre kontrolü
+    if ($password === $user_number) {
+        $signal = true;
+    } else {
+        $signal = false;
+        header("refresh:5;url=login.html");
+    }
+} else {
+    echo "Bu sayfa doğrudan erişilemez!";
+}
+?>
 <!doctype html>
 <html lang="en">
 
@@ -76,18 +103,16 @@
 
     <section class="login-block">
         <div class="login-form" style="background-color: bisque;">
-            <h2 class="text-center" >Giriş Yap</h2>
-            <form action="login.php" method="POST">
-                <div class="form-group">
-                    <label for="username">Kullanıcı Adı (Örn: b1812100001@sakarya.edu.tr)</label>
-                    <input type="text" id="username" name="username" placeholder="Kullanıcı Adı" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Şifre (Örn: b1812100001)</label>
-                    <input type="password" id="password" name="password" placeholder="Şifre" required>
-                </div>
-                <button type="submit" class="btn-login">Giriş Yap</button>
-            </form>
+
+            <?php
+            if ($signal == true) {
+                echo $userId[0] . "  Hoşgeldin";
+            } else {
+                echo "Kullanıcı epostası yada şifre hatalı ";
+                echo "5 saniye içinde geri yönlendiriliyorsunuz";
+            }
+            ?>
+
         </div>
     </section>
 

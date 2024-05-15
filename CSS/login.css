@@ -1,0 +1,53 @@
+.navbar {
+    border-bottom: 3px #79c400 solid;
+}
+
+/* Genel giriş bloğu */
+.login-block {
+    display: flex; /* Öğeleri yatay olarak hizalar */
+    justify-content: center; /* Yatayda merkezler */
+    align-items: center; /* Dikeyde merkezler */
+    height: 100vh; /* Ekran yüksekliği kadar genişlik */
+}
+
+/* Giriş formu */
+.login-form {
+    width: 300px; /* Formun genişliği */
+    padding: 20px; /* Dolgu alanı */
+    border: 1px solid #ccc; /* Kenarlık rengi ve kalınlığı */
+    border-radius: 5px; /* Kenar yuvarlaklığı */
+}
+
+/* Form grubu */
+.form-group {
+    margin-bottom: 20px; /* Alt boşluk */
+}
+
+/* Form etiketleri */
+.form-group label {
+    display: block; /* Etiketleri blok elementi olarak görüntüler */
+    margin-bottom: 5px; /* Alt boşluk */
+}
+
+/* Form giriş alanları */
+.form-group input {
+    width: 100%; /* Giriş alanlarının genişliği */
+    padding: 8px; /* Dolgu alanı */
+    border: 1px solid #ccc; /* Kenarlık rengi ve kalınlığı */
+    border-radius: 5px; /* Kenar yuvarlaklığı */
+}
+
+/* Giriş butonu */
+.btn-login {
+    background-color: #007bff; /* Arka plan rengi */
+    color: #fff; /* Metin rengi */
+    border: none; /* Kenarlık yok */
+    padding: 10px 20px; /* Dolgu alanı */
+    border-radius: 5px; /* Kenar yuvarlaklığı */
+    cursor: pointer; /* İmleci el simgesi yap */
+}
+
+/* Giriş butonuna fare geldiğinde */
+.btn-login:hover {
+    background-color: #0056b3; /* Arka plan rengi değişimi */
+}
