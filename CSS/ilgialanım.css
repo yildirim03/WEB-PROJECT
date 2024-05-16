@@ -1,0 +1,62 @@
+.navbar {
+    border-bottom: 3px #009191 solid;
+}
+.container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* İki sütun oluştur */
+    grid-template-rows: auto auto; /* İki satır oluştur */
+    gap: 10px;
+    height: calc(100vh - 56px); /* Ekran yüksekliğinden navbar yüksekliğini çıkar */
+    margin-top: 56px; /* Navbarın altında başlasın */
+}
+
+.box {
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+#oyunlar {
+    grid-column: 1 / 2; /* İlk sütunda */
+    grid-row: 1 / 2; /* İlk satırda */
+}
+
+#dizifilm {
+    grid-column: 2 / 3; /* İkinci sütunda */
+    grid-row: 1 / 2; /* İlk satırda */
+}
+
+#futbol {
+    grid-column: 1 / 2; /* İlk sütunda */
+    grid-row: 2 / 3; /* İkinci satırda */
+}
+
+#apiKismi {
+    grid-column: 2 / 3; /* İkinci sütunda */
+    grid-row: 2 / 3; /* İkinci satırda */
+    grid-template-rows: auto 1fr; /* Başlık ve içerik için iki satır ayarla */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr; /* Başlık ve içerik için iki satır ayarla */
+    gap: 10px;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Ekran genişliği 768px'den küçük olduğunda */
+@media (max-width: 768px) {
+    .container1 {
+        grid-template-columns: 1fr; /* Sadece bir sütun oluştur */
+    }
+
+    #oyunlar, #dizifilm, #futbol, #apiKismi {
+        grid-column: 1; /* Sadece bir sütunda yer al */
+        grid-row: auto; /* Otomatik satır ataması */
+    }
+}
