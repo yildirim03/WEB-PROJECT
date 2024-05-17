@@ -21,7 +21,7 @@
 
 </head>
 
-<body >
+<body>
     <!-- menü başlangıç kısımı-->
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top shadow-lg">
@@ -68,85 +68,55 @@
 
     <!-- ! iletisim form kısmı  -->
 
-    <section class="p-5  text-center" style="margin-top: 2%;">
-        <div class="container">
-            <h1>Bize Ulaşın</h1>
-        </div>
-    </section>
+    <table class="table">
+        <thead class="table">
+            <tr>
+                <th colspan="5" id="bilgiler">
+                    <h3>Bilgileriniz</h3>
+                </th>
+            </tr>
 
-    <main>
-        <div class="container">
-            <form action="iletisim.php" onsubmit="return control(this)" method="post">
-                <div class="form-Eleman">
-                    <label for="name">Kullanıcı adı</label>
-                    <input type="text" name="nick" class="controlForm" placeholder="Kullanıcı adınız" oninput="control()">
-                    <small class="form-text text-muted">Lütfen doldurunuz</small>
-                </div>
-                <div class="form-Eleman">
-                    <label for="email">Email</label>
-                    <input type="text" name="mail" class="controlForm" placeholder="Mailinizi giriniz." oninput="control()">
-                    <small class="form-text text-muted">Lütfen doldurunuz</small>
-                </div>
-                <div class="form-Eleman">
-                    <label for="radio">Cinsiyetinizi seçiniz</label>
-                    <input type="radio" name="radio" value="Erkek" onclick="control()">Erkek
-                    <input type="radio" name="radio" value="Kadın" onclick="control()">Kadın
-                </div>
-                <div class="form-Eleman">
-                    <label for="">Gönderilecek dosyanızı seçiniz</label>
-                    <input type="file" name="dosya" class="controlForm" onchange="control()">
-                </div>
-                <div class="form-Eleman">
-                    <label for="message">Mesaj</label>
-                    <textarea name="Mesaj" rows="5" class="controlForm" oninput="control()"></textarea>
-                </div>
-                <button class="btn btn-info" type="reset" id="sil" name="sil" value="Reset" onclick="control()">Temizle</button>
-                <button class="btn btn-info" type="submit" name="gonder" id="sub" disabled>Gönder</button>
-            </form>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="bilgiler">Kullanıcı adınız</td>
+                <td id="bilgiler">
+                    <?php
+                    echo $_POST['nick'];
+                        ?>
+                </td>
+            </tr>
+            <tr>
+                <td id="bilgiler">E-mail</td>
+                <td id="bilgiler">
+                    <?php
+                    echo $_POST['mail'];
+                        ?>
+                </td>
+            </tr>
+            <tr>
+                <td id="bilgiler">Cinsiyetiniz</td>
+                <td id="bilgiler">
+                    <?php
+                    if (isset($_POST['gonder'])) {
+                    $chose=$_POST['radio'];
+                    echo $chose;
+                    }
+                    ?>
+                </td>
+            </tr>
+            <tr>
+                <td id="bilgiler">Mesajınız</td>
+                <td id="bilgiler">
+                <?php
+                    echo $_POST['Mesaj'];
+                        ?>
+                </td>
+            </tr>
             
+        </tbody>
 
-        </div>
-    </main>
-
-    <script>
-        function control() {
-            var kullaniciAdi = document.getElementsByName("nick")[0].value;
-            var email = document.getElementsByName("mail")[0].value;
-            var cinsiyet = document.querySelector('input[name="radio"]:checked');
-            var dosya = document.getElementsByName("dosya")[0].value;
-            var mesaj = document.getElementsByName("Mesaj")[0].value;
-            var gonderButton = document.getElementById("sub");
-    
-            // Kullanıcı adı kontrolü (yalnızca harfler ve boşluk içermemeli)
-            var kullaniciAdiRegex = /^[a-zA-Z\s]+$/;
-            var kullaniciAdiGecerli = kullaniciAdiRegex.test(kullaniciAdi);
-    
-            // E-posta kontrolü
-            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            var emailGecerli = emailRegex.test(email);
-    
-            // Mesaj alanının dolu olup olmadığını kontrol et
-            var mesajDolu = mesaj.trim() !== "";
-    
-            // Tüm koşullar sağlanıyorsa "Gönder" butonunu aktif hale getir
-            if (kullaniciAdiGecerli && emailGecerli && cinsiyet && dosya !== "" && mesajDolu) {
-                gonderButton.disabled = false;
-            } else {
-                gonderButton.disabled = true;
-            }
-        }
-    </script>
-    
-    
-
-
-
-
-
-
-
-
-
+    </table>
 
 
 

@@ -1,0 +1,92 @@
+body {
+    background-image: url('iletisim.bg.jpg');
+    background-position: center; /* Resmi ortalayalım */
+    background-size: cover; /* Resmi sığdıralım */
+    background-attachment: fixed; /* Resmi sabitleyelim */
+
+}
+.navbar {
+    border-bottom: 3px #fdec00 solid;
+}
+
+.container {
+    max-width: 600px; /* Formun maksimum genişliği */
+    margin: 0 auto; /* Sayfa ortalaması */
+    border: 1px solid #ccc; /* Kenarlık */
+    padding: 20px; /* Kenarlık içi boşluk */
+    border-radius: 8px; /* Kenar yuvarlaklığı */
+}
+
+.form-Eleman {
+    border-bottom: 1px solid #ccc; /* Her form elemanının altında çizgi oluştur */
+    padding-bottom: 15px; /* Form elemanları arasındaki boşluk */
+    margin-bottom: 15px; /* Form elemanlarının altındaki çizgi ile arasındaki boşluk */
+}
+
+label {
+    display: block; /* Etiketleri blok düzende göster */
+    font-weight: bold; /* Kalın font */
+    margin-bottom: 5px; /* Etiketler arasındaki boşluk */
+}
+
+.controlForm {
+    width: 100%; /* Form elemanlarını genişlik olarak tam sığdır */
+    padding: 8px; /* Form elemanları içi boşluk */
+    margin-bottom: 10px; /* Form elemanları arasındaki boşluk */
+    border: 1px solid #ccc; /* Kenarlık */
+    border-radius: 5px; /* Kenar yuvarlaklığı */
+}
+
+button {
+    padding: 10px 20px; /* Düğme içi boşluk */
+    margin-top: 10px; /* Düğme ile sonraki form elemanı arasındaki boşluk */
+    border: none; /* Kenarlık yok */
+    border-radius: 5px; /* Kenar yuvarlaklığı */
+    cursor: pointer; /* İmleci el simgesi yap */
+}
+
+
+/* ? php sayfam için düzenleme*/
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Viewport yüksekliği */
+}
+
+table {
+    background-color: rgb(233, 221, 221); /* Tablo arka plan rengini beyaz yapar */
+    border-radius: 8px; /* Köşeleri yuvarlatır */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Gölge ekler */
+    width: 60%; /* Genişliği %60 yapar */
+    max-width: 600px; /* Maksimum genişlik 600 piksel */
+    margin: 70px auto 0 auto; /* Ortalamak için otomatik margin, üstte navbar kadar boşluk */
+    border: 1px solid #ccc; /* Kenarlık */
+    padding: 20px; /* Kenarlık içi boşluk */
+}
+
+/* Tablo hücreleri için padding ve hizalama ayarları yapar */
+th, td {
+    padding: 12px 20px; /* İçerik ile hücre kenarı arasına boşluk ekler */
+    text-align: left; /* Metni sola hizalar */
+}
+
+/* Tablo başlık hücreleri için arka plan rengini ayarlar */
+th {
+    background-color: #324f6d; /* Açık gri arka plan rengi */
+}
+
+/* Tablo hücreleri için alt sınır ekler */
+#bilgiler {
+    border-bottom: 1px solid #2306dd; /* Alt sınırı açık gri yapar */
+}
+
+/* Başlıklar için alt boşluğu kaldırır */
+h3 {
+    margin-bottom: 0; /* Başlıkların altındaki boşluğu kaldırır */
+}
+
+
+
+
