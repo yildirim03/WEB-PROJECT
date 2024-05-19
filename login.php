@@ -66,7 +66,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="anasayfa.html">Anasayfa</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Anasayfa</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="hakkımda.html">Hakkımda</a>
